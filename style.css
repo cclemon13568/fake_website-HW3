@@ -7,8 +7,8 @@ body {
     align-items: center;        /* 水平置中所有子元素 */
     justify-content: center;    /* 垂直置中所有子元素 */
     min-height: 100vh;
-    margin: 0;
-    padding: 30px;
+    padding: 30px 0;
+    margin-top: -180px;
     box-sizing: border-box;
 }
 
@@ -75,10 +75,10 @@ label {
 }
 
 .password-label-forgot {
-    display: flex; /* 使用 Flexbox 佈局 */
+    display: flex;                  /* 使用 Flexbox 佈局 */
     justify-content: space-between; /* label 和 a 標籤 兩端對齊 */
-    align-items: baseline; /* 讓 label 和 a 標籤 的基線對齊 */
-    margin-bottom: 6px; /* label 和 input 之間的間距 */
+    align-items: baseline;          /* 讓 label 和 a 標籤 的基線對齊 */
+    margin-bottom: 6px;             /* label 和 input 之間的間距 */
 }
 
 .password-label-forgot label {
