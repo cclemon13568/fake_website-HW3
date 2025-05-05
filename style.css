@@ -1,0 +1,209 @@
+body {
+    background-color: #0d1117;
+    color: #c9d1d9;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    display: flex;
+    flex-direction: column;     /* 垂直排列 logo, h1, container, footer */
+    align-items: center;        /* 水平置中所有子元素 */
+    justify-content: center;    /* 垂直置中所有子元素 */
+    min-height: 100vh;
+    margin: 0;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #161b22;
+    border-radius: 10px;
+    border: 1px solid #30363d;
+    padding: 25px;
+    width: 250px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;    /* 表單與創建帳戶間距 */
+}
+
+img{
+    width: 45px;
+    height: auto;   /*保持圖片比例*/
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 60;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 25px;    /* 標題與表單間距 */
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #ffffff;
+}
+
+.input-text {
+    width: 100%;
+    padding: 5px 10px 5px 10px;
+    margin-bottom: 15px;
+    border: 1px solid #30363d;
+    border-radius: 5px;
+    background-color: #0d1117;
+    color: #ffffff;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.input-text:focus {
+    outline: none;
+    border-color: #58a6ff;
+    box-shadow: 0 0 0 0.2em #58a6ff40;
+}
+
+.forgot-password {
+    display: block;
+    font-size: 12px;
+    color: #58a6ff;
+    text-decoration: none;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.password-container {
+    margin-bottom: 15px; /* 與下方元素的間距 */
+}
+
+.password-label-forgot {
+    display: flex; /* 使用 Flexbox 佈局 */
+    justify-content: space-between; /* label 和 a 標籤 兩端對齊 */
+    align-items: baseline; /* 讓 label 和 a 標籤 的基線對齊 */
+    margin-bottom: 6px; /* label 和 input 之間的間距 */
+}
+
+.password-label-forgot label {
+    margin-bottom: 0; /* 移除 label 預設的下邊距 */
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.password-label-forgot .forgot-password {
+    margin-bottom: 0;   /* 移除链接預設的下邊距 */
+    font-size: 12px;
+    color: #58a6ff;
+    text-decoration: none;
+}
+
+.password-label-forgot .forgot-password:hover {
+    text-decoration: underline;
+}
+
+.password-container .input-text {
+    width: 100%;
+    padding: 5px 10px 5px 10px;
+    border: 1px solid #30363d;
+    border-radius: 5px;
+    background-color: #0d1117;
+    color: #c9d1d9;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.password-container .input-text:focus {
+    outline: none;
+    border-color: #58a6ff;
+    box-shadow: 0 0 0 0.2em #58a6ff40;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 60;
+    color: #ffff;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 5px 16px;
+    font-size: 16px;
+    line-height: 1.5;
+    border-radius: 5px;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #238636;
+    border-color: #238636;
+}
+
+.btn-primary:hover {
+    background-color: #2ea043;
+    border-color: #2ea043;
+    cursor: pointer;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.create-account-container{
+    background-color: #161b22;
+    border-radius: 10px;
+    border: 1px solid #30363d;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+
+    padding: 5px 20px 10px 20px;
+    width: 260px;
+    margin-top: 1px;
+    display: flex;           /* 使用 Flexbox 佈局 */
+    flex-direction: column;  /* 垂直排列子元素 */
+    align-items: center;     /* 水平居中子元素 */
+}
+
+.create-account-container a{
+    color: #58a6ff;
+    text-decoration: none;
+}
+.create-account-container a:hover {
+    text-decoration: underline;
+}
+
+.create-account {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.create-account a {
+    color: #58a6ff;
+    text-decoration: none;
+}
+
+.footer {
+    margin-top: 40px;
+    color: #8b949e;
+    font-size: 12px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.footer li a {
+    color: #8b949e;
+    text-decoration: none;
+}
+
+.footer li a:hover {
+    text-decoration: underline;
+}

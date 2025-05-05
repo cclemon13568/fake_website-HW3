@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in to GitHub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="github.ico" type="image/x-icon">
+</head>
+
+<body>
+<img src="github.ico" alt="GitHub 圖示">
+<h1>Sign in to GitHub</h1>
+<div class="container">
+    <form id="loginForm" action="#" method="post">
+        <label for="login">Username or email address</label>
+        <input type="text" id="login" name="login" class="input-text" tabindex="1">
+
+        <div class="password-container">
+            <div class="password-label-forgot">
+                <label for="password">Password</label>
+                <a href="#" class="forgot-password">Forgot password?</a>
+            </div>
+            <input type="password" id="password" name="password" class="input-text" tabindex="2">
+        </div>
+
+        <input type="submit" id="signInButton" name="commit" value="Sign in" class="btn btn-primary btn-block" tabindex="3" data-ga-click="Sign in,click">
+    </form>
+</div>
+
+<div class="create-account-container">
+    <a href="#">Sign in with a passkey</a>
+    <div class="create-account">
+        New to GitHub? <a href="#">Create an account</a>.
+    </div>
+</div>
+
+<div class="footer">
+    <ul>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Docs</a></li>
+        <li><a href="#">Contact GitHub Support</a></li>
+        <li><a href="#">Manage cookies</a></li>
+        <li><a href="#">Do not share my personal information</a></li>
+    </ul>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
