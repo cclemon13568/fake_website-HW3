@@ -8,7 +8,7 @@ body {
     justify-content: center;    /* 垂直置中所有子元素 */
     min-height: 100vh;
     padding: 0;
-    margin-top: -180px;
+    margin-top: -30px;
     box-sizing: border-box;
 }
 
