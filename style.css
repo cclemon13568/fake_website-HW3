@@ -3,12 +3,12 @@ body {
     color: #c9d1d9;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
     display: flex;
-    flex-direction: column;     /* 垂直排列 logo, h1, container, footer */
-    align-items: center;        /* 水平置中所有子元素 */
-    justify-content: center;    /* 垂直置中所有子元素 */
+    flex-direction: column;         /* 垂直排列 logo, h1, container, footer */
+    align-items: center;            /* 水平置中所有子元素 */
+    justify-content: flex-start;    /* 靠頂部對其所有子元素 */
     min-height: 100vh;
     padding: 0;
-    margin-top: -30px;
+    margin-top: 35px;               /* 控制元素與頂部的距離 */
     box-sizing: border-box;
 }
 
@@ -57,7 +57,7 @@ label {
 
 .input-text:focus {
     outline: none;
-    border-color: #58a6ff;
+    border-color: #0969da;     /* #58a6ff */
     box-shadow: 0 0 0 0.2em #58a6ff40;
 }
 
@@ -112,7 +112,7 @@ label {
 
 .password-container .input-text:focus {
     outline: none;
-    border-color: #58a6ff;
+    border-color: #0969da;
     box-shadow: 0 0 0 0.2em #58a6ff40;
 }
 
